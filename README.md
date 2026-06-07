@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AgentMesh
 
-## Getting Started
+![AgentMesh preview](./public/og-agentmesh.svg)
 
-First, run the development server:
+AgentMesh is a premium control plane for teams running AI agents.
+
+It turns fragmented agent workflows into something you can actually operate:
+- route work across runtimes and providers
+- govern sensitive actions with approvals
+- replay every run
+- inspect trust, cost, and latency
+- manage MCP and tool surfaces from one place
+
+## Product thesis
+
+The next premium AI product is not a single agent.
+It is the orchestration / control / trust / routing / replay / permissions layer around many agents.
+
+## What this MVP includes
+
+- premium cinematic landing page
+- deployable Next.js app
+- local-first workspace demo
+- task template launchpad
+- route-aware execution runs
+- approval queue
+- replay / branch model
+- provider runtime health cards
+- MCP/tool catalog
+- cost / latency / trust overview
+- SVG social preview asset
+
+## Tech
+
+- Next.js 16
+- React 19
+- Tailwind CSS 4
+- Framer Motion
+- Vitest
+
+## Local development
+
+From the workspace root:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open:
+- http://localhost:3000
+- http://localhost:3000/workspace
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tests
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+pnpm test:run
+```
 
-## Learn More
+## Current MVP note
 
-To learn more about Next.js, take a look at the following resources:
+This version is intentionally local-first and demo-friendly.
+The core domain layer is structured to grow into:
+- multi-tenant auth
+- real provider credentials
+- persistent API/backend services
+- managed run infrastructure
+- usage billing
+- enterprise governance
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Workspace paths
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Project root:
+- `/Volumes/AtlasDrive/Atlas/startups/agentmesh`
 
-## Deploy on Vercel
+Key docs:
+- `docs/research/trending-ai-product-opportunities.md`
+- `docs/prd.md`
+- `.hermes/plans/2026-06-06-agentmesh-master-plan.md`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Positioning
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+AgentMesh is designed for:
+- AI-native startups
+- platform teams
+- agent power users
+- companies standardizing multi-agent workflows
+
+## Vision
+
+Build the operating system for reliable agent work.
